@@ -6,11 +6,10 @@ def main():
     print("Welcome to the Calculator! Input \"q\" at any time to quit.")
     user_input = " "
     result = 0.0
-    result_string = " "
     choice = " "
     x = 0.0
     y = 0.0
-    while user_input != "q":
+    while x != "q":
         x = input("Please input your first number:\n>").lower()
         if x == "q":
             exit() 

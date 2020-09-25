@@ -11,14 +11,14 @@ print("""COOL INTRO AND ASCII BORDER GOES HERE""")
 
 # main code in trap()
 
-def trap():
+
+def counter_test():
     while True:
         timer = 6
-        actions = 6
         user_input = input("Testing action function: press y ").lower()
         if user_input == "y":
-            use_action(timer, actions)
-            print(f"Timer: {timer}, Actions: {actions}")
+            use_action(timer)
+            print(f"Timer: {timer}")
             continue
         elif user_input == "q":
             sys.exit()
@@ -26,10 +26,11 @@ def trap():
             continue
 
 
-def use_action(timer, actions):
-    timer -= 1
-    actions -= 1
-    return timer, actions
+# def trap():
 
 
-trap()
+def use_action(x):
+    x -= 1
+    return x
+
+counter_test()
